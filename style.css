@@ -1,0 +1,271 @@
+@import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
+body {
+    padding: 0;
+    margin: 0;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-family: 'Ubuntu', sans-serif;
+}
+img {
+    width: 100%;
+    height: auto;
+}
+li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+p {
+    line-height: 1.5rem;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+h2, h3 {
+    margin: 1rem 0;
+    font-size: 30px;
+}
+header {
+    margin-top: 50px;
+}
+header .navbar-light {
+    background-color: rgb(255, 255, 255);
+}
+header .navbar-brand {
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    text-transform: uppercase;
+    font-size: 1.7em;
+    color: #000;
+}
+header .nav-item {
+    margin-left: 50px;
+    text-transform: uppercase;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 700;
+    font-size: 1em;
+}
+header .nav-item a {
+    color: rgb(39, 39, 39);
+}
+header .nav-item  a::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: #000;
+    transform: scale(0);
+    transition: all 0.15s;
+}
+header .nav-item  a:hover:after {
+    transform: scale(1);
+}
+
+/*slider*/
+.slider {
+    margin-top: 50px;
+    margin-bottom: 70px;
+}
+.post-category, .link-more {
+    text-transform: uppercase;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    color: #b4ad9e;
+    font-size: 15px;
+    font-weight: 500;
+}
+.post-title a {
+    color: #626262;
+    text-decoration: none;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+.single-post {
+    margin-bottom: 70px;
+}
+.post-title-category {
+    color: #626262;
+    font-family: 'Playfair Display', serif;
+    font-size: 25px;
+    font-weight: normal;
+}
+.card-text {
+    font-size: 1rem;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+/*grid-post*/
+.grid-post {
+    margin-bottom: 100px;
+}
+.grid-post .card {
+    border: 0;
+    margin-bottom: 80px;
+}
+.grid-post .card-body {
+    padding-left: 0;
+    padding-right: 0;
+}
+.grid-post .card-img-top {
+    max-height: 350px;
+    border-radius: 0;
+}
+
+/*btn*/
+
+.load-more {
+    border-radius: 0;
+    border-color: #626262;
+    padding: 8px 25px;
+}
+.load-more span {
+    display: none;
+}
+
+/*section signup*/
+
+.signup {
+    background-color: #f0f0f0;
+    padding: 70px 0;
+    margin-bottom: 70px;
+}
+.signup h3 {
+   color: #333;
+   font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+.signup form {
+    margin-top: 70px;
+}
+.signup .form-input {
+    position: relative;
+}
+.signup .form-control {
+    border: 0;
+    border-radius: 0;
+    border-bottom: 1px solid #000;
+    background: transparent;
+}
+.signup .form-control:focus {
+    box-shadow: none;
+}
+.form-input .btn {
+    position: absolute;
+    font-size: 25px;
+    top: -5px;
+    right: 0;
+}
+/*section-footer*/
+footer {
+    padding: 40px 0;
+    background-color: #f0f0f0;
+}
+.footer-left a {
+    color: #626262;
+    margin-right: 20px;
+    text-decoration: none;
+    font-size: 1em;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-weight: 700;
+   
+}
+.footer-left a:hover {
+    color: rgb(33, 64, 68);
+}
+.footer-right a {
+    color: #626262;
+    margin-left: 20px;
+    font-size: 1.2em;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    text-transform: uppercase;
+}
+.footer-right a:hover {
+    color: rgb(33, 64, 68);
+}
+.footer-right span {
+    color: #626262;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 1px;
+    font-size: 15px;
+}
+.footer-right span:hover {
+    color:  rgb(33, 64, 68);
+}
+
+
+
+@media (max-width: 1010px) {
+    .grid-post .card-img-top {
+        max-height: 300px;
+    }  
+}
+@media (max-width: 1024px) {   
+    .grid-post .card-img-top {
+        max-height: 300px;
+    }   
+}
+@media (max-width: 999px) {
+    header .nav-item {
+        margin-left: 0;
+    }
+    .grid-post .card-img-top {
+        max-height: 220px;
+    }
+    .grid-post .card {
+        margin-bottom: 30px;
+    }
+}
+@media (max-width: 830px) {
+    .grid-post .card-img-top {
+        max-height: 220;
+    }
+}
+@media (max-width: 824px) {
+    .grid-post .card-img-top {
+        max-height: 200px;
+    }
+}
+@media (max-width: 767px) {
+    .grid-post .card-img-top {
+        max-height: 100%;
+    }
+    .grid-post .card {
+        margin-bottom: 20px;
+    }
+    .card-body {
+        text-align: center;
+    }
+    .single-post {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    .slider {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    header .nav-item {
+        margin-left: 0;
+    }
+}
+@media (max-width: 740px) {
+    .grid-post .card-img-top {
+        max-height: 350px;
+    }
+}
+@media (max-width: 575px) {
+    .footer-left {
+        margin-bottom: 20px;
+        text-align: center;
+    }
+    .footer-right {
+        text-align: center;
+    }
+    @media (max-width: 400px) {
+        .signup {
+            padding: 20px 0;
+        }
+        .greed-post {
+            margin-bottom: 15px;
+        }
+    }
+}
+
+
+font-family: 'Playfair Display', serif;
+font-family: 'Ubuntu', sans-serif;
