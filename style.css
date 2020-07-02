@@ -23,9 +23,6 @@ h2, h3 {
     margin: 1rem 0;
     font-size: 30px;
 }
-header {
-    margin-top: 50px;
-}
 header .navbar-light {
     background-color: rgb(255, 255, 255);
 }
